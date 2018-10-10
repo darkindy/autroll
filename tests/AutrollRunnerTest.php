@@ -12,6 +12,13 @@ use PHPUnit\Framework\TestCase;
 class AutrollTest extends TestCase
 {
 
+    public function testIsThereAnySyntaxError()
+    {
+        $var = new AutrollRunner;
+        $this->assertTrue(is_object($var));
+        unset($var);
+    }
+
     public function testTroll()
     {
         $var = new AutrollRunner;
