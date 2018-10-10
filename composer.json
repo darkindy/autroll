@@ -1,0 +1,34 @@
+{
+  "description": "Automated Facebook trolling has never been easier",
+  "keywords": [
+    "facebook",
+    "troll",
+	"trolling",
+    "ai",
+    "chatbot"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrei Pietrușel",
+      "email": "andreipsl@yahoo.ro"
+    }
+  ],
+  "type": "project",
+  "require": {
+    "php": ">=5.3.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.8.35"
+  },
+  "autoload": {
+    "psr-4": {
+      "Darkindy\\Autroll\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "phpunit --verbose --configuration phpunit.xml"
+    ]
+  }
+}
